@@ -27,6 +27,9 @@
         text-anchor: middle;
         font-family:'Helvetica Neue', Arial, sans-serif;
       }
+      .purpose {
+        fill: #FAF8CC;
+      }
       .negative-text {
         fill: red;
       }
@@ -36,7 +39,6 @@
       .cause {
         fill: white;
         stroke: orange;
-        color: red;
         cursor: pointer;
       }
       .cause-text {
@@ -123,6 +125,7 @@
             .attr("cx", function(d,i) { return effectX(d,i); })
             .attr("cy", function(d,i) { return effectY(d,i);  })
             .attr("class", "effect")
+            .classed("purpose", function(d){ return d.purpose; })
 
           svg.selectAll(".effect-text")
           .data(effect)
