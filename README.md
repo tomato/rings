@@ -8,6 +8,8 @@ The next set of rings are the effects, you can't vary these, they will increase 
 
 The centre ring is the purpose, in this case it is learning. Play around with the causes to see how they effect learning. If you disagree with the model play around with the json and create your own model. I'd love to hear what you come up with.
 
+Try is out at [http://tomato.github.com/rings/](http://tomato.github.com/rings/)
+
 Have fun
 
 Tom
