@@ -187,6 +187,7 @@
               clickInterval = setInterval(function(){
                 d.val += ev.shiftKey ? -1 : 1;
               }, 1000/fps);
+              d3.event.preventDefault();
           }
         }
 
