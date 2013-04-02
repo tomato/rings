@@ -191,7 +191,7 @@
           function adjustCause(d){
               var ev = d3.event
               clickInterval = setInterval(function(){
-                d.val += ev.shiftKey ? -1 : 1;
+                d.val += ev.shiftKey || e.touches.length == 2 ? -1 : 1;
               }, 1000/fps);
               d3.event.preventDefault();
           }
