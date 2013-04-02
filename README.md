@@ -2,7 +2,7 @@
 
 Rings is an attempt to graphically illustrate what effects an organisations ability to learn.
 
-The outer rings with orange circles are behavioural causes. You can vary these by clicking them, making the cause more positive, or shift-clicking to make the cause more negative. When a cause switches from +ve to -ve it will change name for example Courage switches to Fear
+The outer rings with orange circles are behavioural causes. You can vary these by clicking them (or touch), making the cause more positive, or shift-clicking (or 2 finger touch) to make the cause more negative. When a cause switches from +ve to -ve it will change name for example Courage switches to Fear
 
 The next set of rings are the effects, you can't vary these, they will increase and decrease over time effected by the causes. Each effect is effected at different rates by the different causes
 
