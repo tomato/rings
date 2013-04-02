@@ -78,7 +78,7 @@
       var clickInterval;
       
       $(function(){
-        $(document).on('mouseup',function(){
+        $(document).on('mouseup touchend',function(){
           clearInterval(clickInterval);
           return false;
         });
@@ -147,7 +147,8 @@
             .attr("cx", function(d,i) { return causeX(d,i); })
             .attr("cy", function(d,i) { return causeY(d,i); })
             .attr("data-id", function(d,i){ return i; })
-            .on('mousedown', adjustCause);
+            .on('mousedown', adjustCause)
+            .on('touchstart', adjustCause);
 
           svg.selectAll(".cause-text")
           .data(cause)
@@ -160,7 +161,8 @@
             .attr("x", function(d,i) { return causeX(d,i); })
             .attr("y", function(d,i) { return causeY(d,i);  })
             .attr("data-id", function(d,i){ return i; })
-            .on('mousedown', adjustCause);
+            .on('mousedown', adjustCause)
+            .on('touchstart', adjustCause);
 
           function causeX(d,i){
             return datum.x + (300 * Math.cos(i*causeAngle));
